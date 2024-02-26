@@ -42,7 +42,7 @@ export const Chart = () => {
 
     return (
         <Card>
-            <ul className="flex absolute top-2 right-2 z-10">
+            <ul className="flex absolute top-1 right-2 z-10">
                 {Object.keys(ChartConfig).map((item) => {
                     return <li key={item}>
                         <Filter
@@ -75,7 +75,7 @@ export const Chart = () => {
                     fill="url(#colorUv)"/>
                     <Tooltip />
                     <XAxis dataKey={"date"} />
-                    <YAxis domain={["dataMin", "dataMax"]}/>
+                    <YAxis domain={['dinataM', 'auto']}/>
                 </AreaChart>
             </ResponsiveContainer>
         </Card>

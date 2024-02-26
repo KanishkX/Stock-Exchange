@@ -16,13 +16,13 @@ export const Details = ({ exchange,marketCap,country,industry, beta, previousClo
     return (
       <Card>
         <ul
-          className={`grid grid-cols-2 gap-4 justify-center ${
+          className={`grid grid-cols-2 gap-4 justify-center md:grid-cols-1 md:gap-1 md:text-base divide-y-1 ${
             darkMode ? "divide-gray-800" : null
           }`}
         >
           {Object.keys(detailsList).map((item) => {
             return (
-              <li key={item} className="flex-1 flex justify-between items-center">
+              <li key={item} className="flex justify-between items-center">
                 <span className="font-bold mr-2">{item}</span>
                 <span>{detailsList[item]}</span>
               </li>
